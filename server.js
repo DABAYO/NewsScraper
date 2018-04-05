@@ -1,7 +1,10 @@
 const express = require("express");
+const expressHandlebars = require("express-handlebars");
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cheerio = require("cheerio");
+const request = require("request");
 const app = express();
-// const bodyparser = require
 const port = process.env.PORT || 8080;
 const routes = require("./routes");
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
@@ -14,3 +17,15 @@ mongoose.connect(MONGODB_URI);
 app.listen(port, function() {
  console.log("app is listening on...", port);
 });
+
+express
+
+express-handlebars
+
+mongoose
+
+body-parser
+
+cheerio
+
+request
